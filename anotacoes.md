@@ -114,6 +114,9 @@ app.listen(PORT, ()=>{
     heroku create
     vai no site do heroku e clica no projeto
     clica em deploy - abre todas as informaçãos do projeto
+
+    == Faz a conexão direta com o Github
+    
     copia o link do git: heroko git:remote -a ...
     add no cmd da heroku
     copia a linha do git push heroku master
