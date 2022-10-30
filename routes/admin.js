@@ -137,6 +137,7 @@ router.get("/postagens", eAdmin, (req, res) =>{
     }) 
 })
 
+
 router.get("/postagens/add", eAdmin, (req, res) =>{
     Categoria.find().then((categorias) =>{
        res.render("admin/addpostagem", {categorias: categorias}) 
@@ -174,6 +175,8 @@ router.post("/postagens/nova", eAdmin, (req,res) =>{
         })
     }
 })
+
+ 
 
 router.get("/postagens/edit/:id", eAdmin, (req, res) =>{
     Postagem.findOne({_id:req.params.id}).then((postagem)=>{

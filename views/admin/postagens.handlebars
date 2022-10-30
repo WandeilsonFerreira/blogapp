@@ -14,22 +14,18 @@
                             <small>Categoria: {{categoria.nome}}</small><br>
                         </div>
                         <div class="col mt-5">
+                            <a href="#"><button class="btn btn-success mt-2">Visualizar postagens</button></a>
                             <a href="/admin/postagens/edit/{{_id}}"><button class="btn btn-success mt-2">Editar postagens</button></a>            
                             <a href="/admin/postagens/deletar/{{_id}}"><button class="btn btn-danger mt-2">Deletar postagem</button></a>
-                        </div>                  
+                        </div>            
+                            
                 </div>
             </div>
         </div>
     </div>
-{{else}}
-    <p>Nenhuma postagem registrada</p>
-{{/each}}
-
-
-
-      1 of 2
-    
-   
-      2 of 2
+    {{else}}
+        <p>Nenhuma postagem registrada</p>
+    {{/each}}
+ 
     </div>
   </div>
