@@ -6,8 +6,8 @@ const app = express();
 const admin = require("./routes/admin");
 const path = require('path');
 const mongoose = require('mongoose');
-const session = require('express-session'); //npm install express-session --save
-const flash = require('connect-flash'); //npm install connect-flash --save 
+const session = require('express-session'); 
+const flash = require('connect-flash');  
 require("./models/Postagem");
 const Postagem = mongoose.model("postagens");
 require("./models/Categoria");
@@ -17,14 +17,12 @@ const passport = require("passport")
 require("./config/auth")(passport)
 const db = require("./config/db.js")
 const PORT = process.env.PORT || 3000;
-//npm install --save passport
-//npm install --save passport passport-local
-
-
+ 
+ 
 //Configurações
 //Session
 app.use(session({
-    secret: "cursodenode", //chave que gera uma session
+    secret: "cursodenode",  
     resave: true,
     saveUninitialized: true
 }))
